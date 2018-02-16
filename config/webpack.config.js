@@ -17,7 +17,7 @@ module.exports = {
     'vanilla-app': './vanilla-app/vanilla.js'
   },
   output: {
-    path: path.resolve(__dirname, '../www'),
+    path: path.resolve(__dirname, '../docs'),
     filename: isProduction ? '[name].[chunkhash].js' : '[name].js'
   },
   resolve: {
