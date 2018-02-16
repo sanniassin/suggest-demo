@@ -9729,8 +9729,8 @@ var update = __webpack_require__(91)(content, options);
 if(content.locals) module.exports = content.locals;
 
 if(false) {
-	module.hot.accept("!!../../../../node_modules/css-loader/index.js??ref--1-1!../../../../node_modules/postcss-loader/lib/index.js??ref--1-2!../../../../node_modules/sass-loader/lib/loader.js!./Spinner.scss", function() {
-		var newContent = require("!!../../../../node_modules/css-loader/index.js??ref--1-1!../../../../node_modules/postcss-loader/lib/index.js??ref--1-2!../../../../node_modules/sass-loader/lib/loader.js!./Spinner.scss");
+	module.hot.accept("!!../../../../node_modules/css-loader/index.js??ref--1-1!../../../../node_modules/postcss-loader/lib/index.js??ref--1-2!../../../../node_modules/sass-loader/lib/loader.js??ref--1-3!./Spinner.scss", function() {
+		var newContent = require("!!../../../../node_modules/css-loader/index.js??ref--1-1!../../../../node_modules/postcss-loader/lib/index.js??ref--1-2!../../../../node_modules/sass-loader/lib/loader.js??ref--1-3!./Spinner.scss");
 
 		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 
@@ -9912,8 +9912,8 @@ var update = __webpack_require__(91)(content, options);
 if(content.locals) module.exports = content.locals;
 
 if(false) {
-	module.hot.accept("!!../../../../node_modules/css-loader/index.js??ref--1-1!../../../../node_modules/postcss-loader/lib/index.js??ref--1-2!../../../../node_modules/sass-loader/lib/loader.js!./Input.scss", function() {
-		var newContent = require("!!../../../../node_modules/css-loader/index.js??ref--1-1!../../../../node_modules/postcss-loader/lib/index.js??ref--1-2!../../../../node_modules/sass-loader/lib/loader.js!./Input.scss");
+	module.hot.accept("!!../../../../node_modules/css-loader/index.js??ref--1-1!../../../../node_modules/postcss-loader/lib/index.js??ref--1-2!../../../../node_modules/sass-loader/lib/loader.js??ref--1-3!./Input.scss", function() {
+		var newContent = require("!!../../../../node_modules/css-loader/index.js??ref--1-1!../../../../node_modules/postcss-loader/lib/index.js??ref--1-2!../../../../node_modules/sass-loader/lib/loader.js??ref--1-3!./Input.scss");
 
 		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 
@@ -9947,7 +9947,7 @@ exports = module.exports = __webpack_require__(90)(false);
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fade-in {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n@keyframes fade-in {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\ninput {\n  border: 0;\n  padding: 0;\n  margin: 0;\n  color: black;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n  opacity: 1; }\n\n.input {\n  position: relative;\n  font-family: Arial, Helvetica, Roboto, sans-serif;\n  text-align: left;\n  font-weight: 400; }\n  .input input {\n    font-family: inherit;\n    font-size: 18px;\n    line-height: 24px;\n    margin-bottom: 0;\n    border: 1px solid #CCC;\n    outline: none;\n    background: transparent;\n    position: relative;\n    height: 42px;\n    width: 100%;\n    cursor: inherit;\n    line-height: 24px;\n    padding: 0 11px;\n    -webkit-appearance: none;\n    -moz-appearance: none;\n    text-align: inherit;\n    border-radius: 0;\n    -webkit-box-sizing: border-box;\n            box-sizing: border-box; }\n  .input__placeholder {\n    color: #CCC;\n    font-family: inherit;\n    font-size: 18px;\n    position: absolute;\n    top: 1px;\n    left: 12px;\n    right: 12px;\n    overflow: hidden;\n    height: 40px;\n    line-height: 40px;\n    pointer-events: none; }\n  .input__label {\n    font-size: 14px;\n    line-height: 18px;\n    padding-bottom: 6px;\n    cursor: pointer;\n    text-align: left;\n    white-space: normal;\n    color: black; }\n  .input--focus input {\n    border-color: #1071FF; }\n  .input--with-suggest input {\n    border-radius: 2px 2px 0 0; }\n  .input--loading input {\n    padding-right: 36px; }\n  .input--disabled .input__label {\n    cursor: default; }\n  .input-suggest {\n    -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.23);\n            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.23);\n    border: 1px solid #CCC;\n    border-top: 0;\n    position: absolute;\n    width: 100%;\n    left: 0;\n    -webkit-box-sizing: border-box;\n            box-sizing: border-box;\n    border-top-color: #CCC;\n    z-index: 2;\n    background-color: white; }\n    .input-suggest__item {\n      font-size: 18px;\n      line-height: 22px;\n      padding: 6px 11px;\n      cursor: pointer;\n      -webkit-box-sizing: border-box;\n              box-sizing: border-box;\n      position: relative; }\n      .input-suggest__item--hovered {\n        background-color: #F2F3F7; }\n  .input__ico-loading {\n    position: absolute;\n    right: 13px;\n    margin-top: 11px;\n    z-index: 1;\n    -webkit-animation: fade-in 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06) 0.1s forwards;\n            animation: fade-in 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06) 0.1s forwards;\n    opacity: 0; }\n    .input__ico-loading:before {\n      content: '';\n      position: absolute;\n      display: block;\n      right: 100%;\n      top: -10px;\n      bottom: -10px;\n      width: 12px;\n      background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white));\n      background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%);\n      margin-right: 5px; }\n", ""]);
+exports.push([module.i, "@-webkit-keyframes fade-in {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n@keyframes fade-in {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n@-webkit-keyframes fade-out {\n  from {\n    opacity: 1; }\n  to {\n    opacity: 0; } }\n\n@keyframes fade-out {\n  from {\n    opacity: 1; }\n  to {\n    opacity: 0; } }\n\ninput {\n  border: 0;\n  padding: 0;\n  margin: 0;\n  color: black;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n  opacity: 1; }\n\n.input {\n  position: relative;\n  font-family: Arial, Helvetica, Roboto, sans-serif;\n  text-align: left;\n  font-weight: 400; }\n  .input input {\n    font-family: inherit;\n    font-size: 18px;\n    line-height: 24px;\n    margin-bottom: 0;\n    border: 1px solid #CCC;\n    outline: none;\n    background: transparent;\n    position: relative;\n    height: 42px;\n    width: 100%;\n    cursor: inherit;\n    line-height: 24px;\n    padding: 0 11px;\n    -webkit-appearance: none;\n    -moz-appearance: none;\n    text-align: inherit;\n    border-radius: 0;\n    -webkit-box-sizing: border-box;\n            box-sizing: border-box; }\n  .input__placeholder {\n    color: #CCC;\n    font-family: inherit;\n    font-size: 18px;\n    position: absolute;\n    top: 1px;\n    left: 12px;\n    right: 12px;\n    overflow: hidden;\n    height: 40px;\n    line-height: 40px;\n    pointer-events: none; }\n  .input__label {\n    font-size: 14px;\n    line-height: 18px;\n    padding-bottom: 6px;\n    cursor: pointer;\n    text-align: left;\n    white-space: normal;\n    color: black; }\n  .input--focus input {\n    border-color: #1071FF; }\n  .input--with-suggest input {\n    border-radius: 2px 2px 0 0; }\n  .input--loading input, .input--search input {\n    padding-right: 48px; }\n  .input--loading .input__btn-search {\n    -webkit-animation: fade-out 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06) 0.1s forwards;\n            animation: fade-out 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06) 0.1s forwards; }\n  .input--disabled .input__label {\n    cursor: default; }\n  .input-suggest {\n    -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.23);\n            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.23);\n    border: 1px solid #CCC;\n    border-top: 0;\n    position: absolute;\n    width: 100%;\n    left: 0;\n    -webkit-box-sizing: border-box;\n            box-sizing: border-box;\n    border-top-color: #CCC;\n    z-index: 2;\n    background-color: white; }\n    .input-suggest__item {\n      font-size: 18px;\n      line-height: 22px;\n      padding: 6px 11px;\n      cursor: pointer;\n      -webkit-box-sizing: border-box;\n              box-sizing: border-box;\n      position: relative; }\n      .input-suggest__item--hovered {\n        background-color: #F2F3F7; }\n  .input__btn-search {\n    position: absolute;\n    right: 0;\n    width: 42px;\n    height: 40px;\n    background: url(\"data:image/svg+xml;charset=utf-8,%3Csvg width='17' height='19' viewBox='0 0 17 19' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EGroup 4%3C/title%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M9.5 10.5l6 7' stroke='%231071FF' stroke-width='2' stroke-linecap='square'/%3E%3Ccircle fill='%231071FF' cx='7.5' cy='7.5' r='7.5'/%3E%3Ccircle fill='%23FFF' cx='7.5' cy='7.5' r='5.5'/%3E%3C/g%3E%3C/svg%3E\") no-repeat;\n    background-position: 50% 12px;\n    top: 1px;\n    cursor: pointer;\n    z-index: 1; }\n  .input__ico-loading {\n    position: absolute;\n    right: 12px;\n    margin-top: 12px;\n    z-index: 1;\n    -webkit-animation: fade-in 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06) 0.1s forwards;\n            animation: fade-in 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06) 0.1s forwards;\n    opacity: 0;\n    background-color: white; }\n", ""]);
 
 // exports
 
@@ -9976,8 +9976,8 @@ var update = __webpack_require__(91)(content, options);
 if(content.locals) module.exports = content.locals;
 
 if(false) {
-	module.hot.accept("!!../../node_modules/css-loader/index.js??ref--1-1!../../node_modules/postcss-loader/lib/index.js??ref--1-2!../../node_modules/sass-loader/lib/loader.js!./App.scss", function() {
-		var newContent = require("!!../../node_modules/css-loader/index.js??ref--1-1!../../node_modules/postcss-loader/lib/index.js??ref--1-2!../../node_modules/sass-loader/lib/loader.js!./App.scss");
+	module.hot.accept("!!../../node_modules/css-loader/index.js??ref--1-1!../../node_modules/postcss-loader/lib/index.js??ref--1-2!../../node_modules/sass-loader/lib/loader.js??ref--1-3!./App.scss", function() {
+		var newContent = require("!!../../node_modules/css-loader/index.js??ref--1-1!../../node_modules/postcss-loader/lib/index.js??ref--1-2!../../node_modules/sass-loader/lib/loader.js??ref--1-3!./App.scss");
 
 		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 
@@ -10374,6 +10374,10 @@ function (_React$Component) {
       value: function value() {
         var query = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _this.state.searchQuery;
 
+        if (_this.state.searching) {
+          return;
+        }
+
         if (!query) {
           _this.onSearchItemsLoaded(null);
 
@@ -10420,6 +10424,7 @@ function (_React$Component) {
         className: "demo-app"
       }, _react.default.createElement(_Input.default, {
         autoFocus: true,
+        search: true,
         placeholder: "Lets look at this demo",
         loading: searching,
         value: searchQuery,
@@ -10429,7 +10434,8 @@ function (_React$Component) {
         suggestItems: suggestItems,
         onSuggestItemSelect: this.onSuggestItemSelect,
         onSuggestItemHover: this.onSuggestItemHover,
-        onEnterPress: this.loadSearchItems
+        onEnterPress: this.loadSearchItems,
+        onSearch: this.loadSearchItems
       }), searchItems ? _react.default.createElement("div", {
         className: "search-results"
       }, _react.default.createElement("div", {
@@ -27910,17 +27916,6 @@ function (_React$PureComponent) {
           _this.props.onBlur(event);
         }
       }
-    }), Object.defineProperty(_assertThisInitialized(_this), "onClick", {
-      configurable: true,
-      enumerable: true,
-      writable: true,
-      value: function value() {
-        _this.input.focus();
-
-        _this.setState({
-          focused: true
-        });
-      }
     }), Object.defineProperty(_assertThisInitialized(_this), "onKeyDown", {
       configurable: true,
       enumerable: true,
@@ -27959,8 +27954,6 @@ function (_React$PureComponent) {
   _createClass(Input, [{
     key: "render",
     value: function render() {
-      var _this2 = this;
-
       var _props = this.props,
           label = _props.label,
           disabled = _props.disabled,
@@ -27972,32 +27965,31 @@ function (_React$PureComponent) {
           onSuggestItemSelect = _props.onSuggestItemSelect,
           onSuggestItemHover = _props.onSuggestItemHover,
           placeholder = _props.placeholder,
-          restProps = _objectWithoutProperties(_props, ["label", "disabled", "className", "onEnterPress", "onEscPress", "loading", "suggestItems", "onSuggestItemSelect", "onSuggestItemHover", "placeholder"]);
+          onSearch = _props.onSearch,
+          search = _props.search,
+          restProps = _objectWithoutProperties(_props, ["label", "disabled", "className", "onEnterPress", "onEscPress", "loading", "suggestItems", "onSuggestItemSelect", "onSuggestItemHover", "placeholder", "onSearch", "search"]);
 
       var focused = this.state.focused;
       var classes = (0, _classnames.default)({
         'input': true,
         'input--focus': focused && !disabled,
-        'input--loading': loading
+        'input--loading': loading,
+        'input--search': !loading && search
       }, className);
       var showPlaceholder = !!placeholder && !this.props.value;
       return _react.default.createElement("div", {
-        onClick: this.onClick,
         className: classes
-      }, !!label && _react.default.createElement("div", {
-        className: "input__label"
-      }, label), showPlaceholder && _react.default.createElement("div", {
+      }, showPlaceholder && _react.default.createElement("div", {
         className: "input__placeholder"
-      }, placeholder), loading && _react.default.createElement("div", {
+      }, placeholder), search && _react.default.createElement("div", {
+        className: "input__btn-search",
+        onClick: loading ? null : onSearch
+      }), loading && _react.default.createElement("div", {
         className: "input__ico-loading"
       }, _react.default.createElement(_Spinner.default, null)), _react.default.createElement("input", _extends({}, restProps, {
-        ref: function ref(_ref2) {
-          return _this2.input = _ref2;
-        },
         onFocus: this.onFocus,
         onBlur: this.onBlur,
         onChange: this.onChange,
-        onKeyPress: this.onKeyPress,
         onKeyDown: this.onKeyDown
       })), suggestItems && _react.default.createElement(_InputSuggest.default, {
         items: suggestItems,
