@@ -10434,8 +10434,8 @@ function (_React$Component) {
         suggestItems: suggestItems,
         onSuggestItemSelect: this.onSuggestItemSelect,
         onSuggestItemHover: this.onSuggestItemHover,
-        onEnterPress: this.loadSearchItems,
-        onSearch: this.loadSearchItems
+        onEnterPress: this.loadSearchItems.bind(this, searchQuery),
+        onSearch: this.loadSearchItems.bind(this, searchQuery)
       }), searchItems ? _react.default.createElement("div", {
         className: "search-results"
       }, _react.default.createElement("div", {

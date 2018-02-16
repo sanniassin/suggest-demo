@@ -139,7 +139,7 @@ class App extends React.Component {
 
     return (
       <div className="demo-app">
-        <Input autoFocus search placeholder="Lets look at this demo" loading={searching} value={searchQuery} onChange={this.onChange} onBlur={this.onBlur} className="app-input" suggestItems={suggestItems} onSuggestItemSelect={this.onSuggestItemSelect} onSuggestItemHover={this.onSuggestItemHover} onEnterPress={this.loadSearchItems} onSearch={this.loadSearchItems} />
+        <Input autoFocus search placeholder="Lets look at this demo" loading={searching} value={searchQuery} onChange={this.onChange} onBlur={this.onBlur} className="app-input" suggestItems={suggestItems} onSuggestItemSelect={this.onSuggestItemSelect} onSuggestItemHover={this.onSuggestItemHover} onEnterPress={this.loadSearchItems.bind(this, searchQuery)} onSearch={this.loadSearchItems.bind(this, searchQuery)} />
         { searchItems ?
           <div className="search-results">
             <div className="search-results__label">
