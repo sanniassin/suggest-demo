@@ -81,6 +81,7 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               plugins: [
+                require('postcss-svgo'),
                 require('autoprefixer')({
                   browsers
                 })
@@ -88,7 +89,10 @@ module.exports = {
             }
           },
           {
-            loader: 'sass-loader'
+            loader: 'sass-loader',
+            options: {
+              functions: require('./sass-helpers')
+            }
           }
         ]
       }

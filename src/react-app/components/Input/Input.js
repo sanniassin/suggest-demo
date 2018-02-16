@@ -56,12 +56,13 @@ class Input extends React.PureComponent {
   }
 
   render() {
-    var { label, disabled, className, onEnterPress, onEscPress, loading, suggestItems, onSuggestItemSelect, onSuggestItemHover, placeholder, ...restProps } = this.props;
+    var { label, disabled, className, onEnterPress, onEscPress, loading, suggestItems, onSuggestItemSelect, onSuggestItemHover, placeholder, onSearch, search, ...restProps } = this.props;
     var { focused } = this.state;
     var classes = classnames({
       'input': true,
       'input--focus': focused && !disabled,
-      'input--loading': loading
+      'input--loading': loading,
+      'input--search': !loading && search
     }, className);
 
     var showPlaceholder = !!placeholder && !this.props.value;
@@ -69,6 +70,7 @@ class Input extends React.PureComponent {
     return (
       <div className={classes}>
         { showPlaceholder && <div className="input__placeholder">{ placeholder }</div> }
+        { search && <div className="input__btn-search" onClick={loading ? null : onSearch} /> }
         { loading && <div className="input__ico-loading"><Spinner /></div> }
         <input {...restProps} onFocus={this.onFocus} onBlur={this.onBlur} onChange={this.onChange} onKeyDown={this.onKeyDown} />
         { suggestItems && <InputSuggest items={suggestItems} onItemSelect={onSuggestItemSelect} onItemHover={onSuggestItemHover} /> }

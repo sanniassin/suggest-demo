@@ -101,6 +101,10 @@ class App extends React.Component {
   }
 
   loadSearchItems = (query = this.state.searchQuery) => {
+    if (this.state.searching) {
+      return;
+    }
+
     if (!query) {
       this.onSearchItemsLoaded(null);
       return;
@@ -135,7 +139,7 @@ class App extends React.Component {
 
     return (
       <div className="demo-app">
-        <Input autoFocus placeholder="Lets look at this demo" loading={searching} value={searchQuery} onChange={this.onChange} onBlur={this.onBlur} className="app-input" suggestItems={suggestItems} onSuggestItemSelect={this.onSuggestItemSelect} onSuggestItemHover={this.onSuggestItemHover} onEnterPress={this.loadSearchItems} />
+        <Input autoFocus search placeholder="Lets look at this demo" loading={searching} value={searchQuery} onChange={this.onChange} onBlur={this.onBlur} className="app-input" suggestItems={suggestItems} onSuggestItemSelect={this.onSuggestItemSelect} onSuggestItemHover={this.onSuggestItemHover} onEnterPress={this.loadSearchItems} onSearch={this.loadSearchItems} />
         { searchItems ?
           <div className="search-results">
             <div className="search-results__label">

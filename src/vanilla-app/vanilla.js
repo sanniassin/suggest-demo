@@ -25,8 +25,14 @@ var searchResultsItems = document.querySelector('.search-results__items');
 var searchResultsLabel = document.querySelector('.search-results__label');
 var inputSuggest = document.querySelector('.input-suggest');
 var loadingIcon = document.querySelector('.input__ico-loading');
+var searchButton = document.querySelector('.input__btn-search');
 var suggestHint = document.querySelector('.suggest-hint');
 
+var hideSuggest = () => {
+  inputSuggest.innerHTML = '';
+  inputSuggest.hidden = true;
+  document.removeEventListener('keydown', onDocumentKeyDown);
+};
 
 var onSearchItemsLoaded = (res) => {
   loadingIcon.hidden = true;
@@ -45,6 +51,25 @@ var onSearchItemsLoaded = (res) => {
     .join('');
 
   searchResultsItems.innerHTML = searchResultsItemsHtml;
+};
+
+var loadSearchItems = (query = input.value) => {
+  if (!query) {
+    return;
+  }
+
+  hideSuggest();
+
+  loadingIcon.hidden = false;
+
+  getSearchItems(query)
+    .then((searchRes) => {
+      if (input.value !== query) {
+        return;
+      }
+
+      onSearchItemsLoaded(searchRes);
+    });
 };
 
 var onDocumentKeyDown = (event) => {
@@ -96,12 +121,6 @@ var onDocumentKeyDown = (event) => {
     default:
       break;
   }
-};
-
-var hideSuggest = () => {
-  inputSuggest.innerHTML = '';
-  inputSuggest.hidden = true;
-  document.removeEventListener('keydown', onDocumentKeyDown);
 };
 
 var onInputChange = () => {
@@ -169,5 +188,24 @@ var onInputBlur = () => {
   hideSuggest();
 };
 
+var onInputKeyDown = (event) => {
+  if (event.keyCode !== KEY_ENTER) {
+    return;
+  }
+
+  var suggestItems = Array.from(inputSuggest.children);
+  if (!suggestItems.length) {
+    loadSearchItems();
+  }
+
+  var selectedIndex = suggestItems.indexOf(inputSuggest.querySelector('.input-suggest__item--hovered'));
+
+  if (selectedIndex === -1) {
+    loadSearchItems();
+  }
+};
+
+searchButton.addEventListener('click', loadSearchItems);
 input.addEventListener('input', onInputChange);
+input.addEventListener('keydown', onInputKeyDown);
 input.addEventListener('blur', onInputBlur);
