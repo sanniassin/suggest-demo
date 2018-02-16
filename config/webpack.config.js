@@ -1,6 +1,5 @@
 var path = require('path');
 var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var srcDir = path.resolve(__dirname, '../src');
@@ -28,7 +27,6 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"' + process.env.NODE_ENV + '"'
     }),
-    // new ExtractTextPlugin(isProduction ? 'style.[name].[chunkhash].css' : 'style.[name].css'),
     new HtmlWebpackPlugin({
       inject: 'body',
       template: path.resolve(srcDir, 'react-app/index.html'),

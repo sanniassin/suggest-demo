@@ -15,6 +15,7 @@ class Input extends React.PureComponent {
 
   onFocus = (event) => {
     this.setState({ focused: true });
+
     if (typeof this.props.onFocus === 'function') {
       this.props.onFocus(event);
     }
@@ -26,11 +27,6 @@ class Input extends React.PureComponent {
     if (typeof this.props.onBlur === 'function') {
       this.props.onBlur(event);
     }
-  }
-
-  onClick = () => {
-    this.input.focus();
-    this.setState({ focused: true });
   }
 
   onKeyDown = (event) => {
@@ -71,11 +67,10 @@ class Input extends React.PureComponent {
     var showPlaceholder = !!placeholder && !this.props.value;
 
     return (
-      <div onClick={this.onClick} className={classes}>
-        { !!label && <div className="input__label">{ label }</div> }
+      <div className={classes}>
         { showPlaceholder && <div className="input__placeholder">{ placeholder }</div> }
         { loading && <div className="input__ico-loading"><Spinner /></div> }
-        <input {...restProps} ref={ref => this.input = ref} onFocus={this.onFocus} onBlur={this.onBlur} onChange={this.onChange} onKeyPress={this.onKeyPress} onKeyDown={this.onKeyDown} />
+        <input {...restProps} onFocus={this.onFocus} onBlur={this.onBlur} onChange={this.onChange} onKeyDown={this.onKeyDown} />
         { suggestItems && <InputSuggest items={suggestItems} onItemSelect={onSuggestItemSelect} onItemHover={onSuggestItemHover} /> }
       </div>
     );
