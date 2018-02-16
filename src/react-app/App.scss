@@ -1,0 +1,10 @@
+body { font-family: Helvetica, Arial, Roboto, sans-serif; background-color: white; padding: 0; margin: 0; font-size: 18px; line-height: 24px; }
+
+.demo-app { max-width: 400px; margin: auto; padding: 30px 18px; }
+.suggest-hint { margin-top: 12px; padding: 0 12px;
+  &__intro { color: #AAA; }
+}
+.search-results { margin-top: 12px;
+  &__label { padding: 0 12px; }
+}
+.search-item { margin-top: 12px; border-top: 1px solid #CCC; padding: 12px 12px 0; }

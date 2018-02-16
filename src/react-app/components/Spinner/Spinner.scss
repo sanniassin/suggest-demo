@@ -1,0 +1,11 @@
+@keyframes rotate-clockswise {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(90deg); }
+  50% { transform: rotate(180deg); }
+  75% { transform: rotate(270deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinner { display: block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; animation: rotate-clockswise 0.85s linear infinite;
+  &-container { width: 19px; height: 19px; position: relative; display: block; }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Suggest demo</title>
+  <meta charset="utf-8"/>
+  <meta name="fragment" content="!">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, user-scalable=no"/>
+</head>
+<body>
+  <div class="demo-app">
+    <div class="input app-input">
+      <div class="input__placeholder">Lets look at this demo</div>
+      <div class="input__ico-loading" hidden>
+        <span class="spinner-container">
+          <svg class="spinner" height="22px" width="22px" version="1.1" viewBox="0 0 22 22">
+            <defs>
+              <linearGradient id="spinnerGradient-1" x1="0%" x2="100%" y1="50%" y2="50%">
+                <stop offset="0%" stop-color="#1071FF"></stop>
+                <stop offset="100%" stop-color="#1071FF" stop-opacity="0"></stop>
+              </linearGradient>
+              <linearGradient id="spinnerGradient-2" x1="50%" x2="50%" y1="49.9%" y2="50%">
+                <stop offset="0%" stop-color="#1071FF"></stop>
+                <stop offset="100%" stop-color="#1071FF" stop-opacity="0"></stop>
+              </linearGradient>
+            </defs>
+            <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+              <g stroke-width="3" transform="translate(2.000000, 2.000000)">
+                <circle cx="9" cy="9" r="9" stroke="url(#spinnerGradient-1)"></circle>
+                <circle cx="9" cy="9" r="9" stroke="url(#spinnerGradient-2)"></circle>
+              </g>
+            </g>
+          </svg>
+        </span>
+      </div>
+      <input value="">
+      <div class="input-suggest" hidden></div>
+    </div>
+    <div class="suggest-hint"><span class="suggest-hint__intro">Suggest words:</span> Apple, Orange, Mango, Blackberry, Pineapple, Strawberry</div>
+    <div class="search-results">
+      <div class="search-results__label"></div>
+      <div class="search-results__items"></div>
+    </div>
+  </div>
+</body>
+</html>
